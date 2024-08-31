@@ -9,7 +9,7 @@ def para():
     parser.add_argument('--layers', nargs='?', default='[8,8]', help="Dim of mlp layers.")
     parser.add_argument('--num_neg', type=int, default=4, help='Number of negative items.')
     parser.add_argument('--path', nargs='?', default='Data/', help='Input data path.')
-    parser.add_argument('--dataset', nargs='?', default='ML', help='Choose a dataset.')
+    parser.add_argument('--dataset', nargs='?', default='MovieLens', help='Choose a dataset.')
     parser.add_argument('--device', nargs='?', default='cuda' if cuda.is_available() else 'cpu',
                         help='Which device to run the model.')
 
